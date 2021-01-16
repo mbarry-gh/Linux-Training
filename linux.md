@@ -139,7 +139,7 @@ $ scp web01.k8slab.in:file web02.k8slab.in:file <br />
 
 ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)  $ yum list installed | grep ssh <br />
 ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)  $ systemctl status sshd <br />
-![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)  $ systemctl enable sshd </b /> 
+![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)  $ systemctl enable sshd </br /> 
 ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)  $ systemctl start sshd <br />
 ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)  $ grep PermitRootLogin /etc/ssh/sshd_config <br />
 ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)  $ scp /home/vipin/memo vipin@10.140.67.23:/tmp <br />
