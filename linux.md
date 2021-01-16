@@ -107,13 +107,13 @@ follow these steps:
 
 for example :
 
-[vagrant@docker01 .ssh]$ grep vagrant /etc/passwd
-vagrant:x:1000:1000::/home/vagrant:/bin/bash
-mkdir -p ~vagrant/.ssh && chmod 0700 ~vagrant/.ssh
-$ cp /tmp/id_rsa.pub >> ~vagrant/.ssh/authorized_keys
-$ chmod 0600 ~vagrant/.ssh/authorized_keys
+[vagrant@docker01 .ssh]$ grep vagrant /etc/passwd <br />
+vagrant:x:1000:1000::/home/vagrant:/bin/bash <br />
+mkdir -p ~vagrant/.ssh && chmod 0700 ~vagrant/.ssh <br />
+$ cp /tmp/id_rsa.pub >> ~vagrant/.ssh/authorized_keys <br />
+$ chmod 0600 ~vagrant/.ssh/authorized_keys <br />
 
-#ssh-agent :
+# ssh-agent :
 ssh-agent is even more useful when you leverage its key forwarding feature, which makes the loaded keys available to remote hosts while you are logged in to them through ssh.
  You can use this feature to jump from one server to another without copying your private key to remote systems.
 
