@@ -18,7 +18,7 @@ In the most common and basic usage, a client establishes a connection to the ser
 
 To initiate this process, a user invokes ssh with the remote host as the first argument:
 
-![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+ ssh web01.k8slab.in ) $ ssh web01.k8slab.in 
+![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) $ ssh web01.k8slab.in 
 
 ssh attempts a TCP connection on port 22 When the connection is established, the server sends its public key for verification. If the server isn’t already known then ssh prompts the user to confirm
 Once the user accepts the key, the fingerprint is added to ~/.ssh/known_hosts for future use.
@@ -29,12 +29,12 @@ $ cat known_hosts
 
 Once the host key has been accepted, the server lists the authentication methods it supports. simple UNIX password authentication, trusted hosts, public keys, GSSAPI for integration with Kerberos.
 
-Of these, public key authentication is the most commonly used and is the method we recommend for most sites. Configuration is found in the /etc/ssh directory.
+Of these, public key authentication is the most commonly used and is the method we recommend for most sites. Configuration is found in the ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) /etc/ssh directory.
 
-ssh_config = Site-wide client configuration
-sshd_config = Server configuration
-*_key 0600 = Private keys for every algorithm supported by the server
-*_key.pub = A public key to match each private key
+- ssh_config = Site-wide client configuration
+- sshd_config = Server configuration
+- *_key 0600 = Private keys for every algorithm supported by the server
+- *_key.pub = A public key to match each private key
 
 In addition OpenSSH uses ~/.ssh for storing public and private keys, for per-user client.
 
@@ -42,29 +42,29 @@ The ssh client :
 
 For example, to check the disk space of /var/log:
 
-$ ssh web01.k8slab.in "df -h /var/log"
+![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) $ ssh web01.k8slab.in "df -h /var/log"
 
 If you specify a command, ssh authenticates itself to the host, runs the command, and exits without opening an interactive shell. If you do not specify a username, ssh uses your local username on the remote host.
 
 # Specify username to call SSH on remote machine
 
-$ ssh vipin@web01.k8slab.in
+![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) $ ssh vipin@web01.k8slab.in
 
 # For example, you could disable host checks for a server:
 
-$ ssh -o StrictHostKeyChecking=no web01.k8slab.in
+![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) $ ssh -o StrictHostKeyChecking=no web01.k8slab.in
 
 Useful SSH client configuration options :
 
-AddKeysToAgent = Automatically add keys to ssh-agent 
-ConnectTimeout = Connection timeout in seconds 
-ControlMaster = Allow connection multiplexing
-DynamicForward = Set up a SOCKS4 or SOCKS5 proxy
-ForwardAgent = Enable ssh-agent forwarding 
-Host = Marker for a new host alias
-IdentityFile = Path to an authentication private key ~/.ssh/id_rsa
-Port = Port to connect on 22
-RequestTTY = Specify whether a TTY is needed
+- AddKeysToAgent = Automatically add keys to ssh-agent 
+- ConnectTimeout = Connection timeout in seconds 
+- ControlMaster = Allow connection multiplexing
+- DynamicForward = Set up a SOCKS4 or SOCKS5 proxy
+- ForwardAgent = Enable ssh-agent forwarding 
+- Host = Marker for a new host alias
+- IdentityFile = Path to an authentication private key ~/.ssh/id_rsa
+- Port = Port to connect on 22
+- RequestTTY = Specify whether a TTY is needed
 
 # Public key authentication :
 
