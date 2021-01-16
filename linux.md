@@ -4,15 +4,15 @@ The SSH system, is a protocol for remote logins and for securing network service
 
 SSH is a client/server protocol that uses cryptography for authentication, confidentiality, and integrity of communications between two hosts.
 
-OpenSSH essentials :
+**OpenSSH essentials :**
 
-• ssh, the client
-• sshd, the server daemon
-• ssh-keygen, for generating public/private key pairs
-• ssh-add and ssh-agent, tools for managing authentication keys
-• ssh-keyscan, for retrieving public keys from servers
-• sftp-server, the server process for file transfer over SFTP
-• sftp and scp, file transfer client utilities
+- ssh, the client
+- sshd, the server daemon
+- ssh-keygen, for generating public/private key pairs
+- ssh-add and ssh-agent, tools for managing authentication keys
+- ssh-keyscan, for retrieving public keys from servers
+- sftp-server, the server process for file transfer over SFTP
+- sftp and scp, file transfer client utilities
 
 In the most common and basic usage, a client establishes a connection to the server, authenticates itself, and subsequently opens a shell to execute commands. Many users can log in simultaneously. A pseudo-terminal is allocated for each, connecting their input and output to the remote system. 
 
