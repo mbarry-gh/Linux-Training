@@ -142,5 +142,5 @@ $ scp web01.k8slab.in:file web02.k8slab.in:file <br />
 ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)  $ systemctl enable sshd <br /> 
 ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)  $ systemctl start sshd <br />
 ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)  $ grep PermitRootLogin /etc/ssh/sshd_config <br />
-![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)  $ scp /home/vipin/memo vipin@10.140.67.23:/tmp <br />
-![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)  $ scp vipin@10.140.67.23:/usr/share/man/man1/ /tmp/ <br />
+![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)  $ scp /home/vipin/memo vipin@10.140.67.23:/tmp [Copy single file] <br />
+![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)  $ scp vipin@10.140.67.23:/usr/share/man/man1/ /tmp/ [copy entire directory] <br />
