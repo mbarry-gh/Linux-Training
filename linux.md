@@ -108,13 +108,13 @@ follow these steps:
 for example :
 
 [vagrant@docker01 .ssh]$ grep vagrant /etc/passwd <br />
-vagrant:x:1000:1000::/home/vagrant:/bin/bash <br />
-mkdir -p ~vagrant/.ssh && chmod 0700 ~vagrant/.ssh <br />
+          vagrant:x:1000:1000::/home/vagrant:/bin/bash <br />
+$mkdir -p ~vagrant/.ssh && chmod 0700 ~vagrant/.ssh <br />
 $ cp /tmp/id_rsa.pub >> ~vagrant/.ssh/authorized_keys <br />
 $ chmod 0600 ~vagrant/.ssh/authorized_keys <br />
 
 # ssh-agent :
-ssh-agent is even more useful when you leverage its key forwarding feature, which makes the loaded keys available to remote hosts while you are logged in to them through ssh.
+ssh-agent is even more useful when you leverage its ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)  key forwarding feature, which makes the loaded keys available to remote hosts while you are logged in to them through ssh.
  You can use this feature to jump from one server to another without copying your private key to remote systems.
 
 
@@ -128,14 +128,14 @@ ssh-agent is even more useful when you leverage its key forwarding feature, whic
 
 To enable agent forwarding, either add ForwardAgent yes to your ~/.ssh.config file or use ssh -A.
 
-sshd: the OpenSSH server :
+# sshd: the OpenSSH server :
 
 The OpenSSH server daemon, sshd, listens on port 22 (by default) for connections from clients. 
 Its configuration file, /etc/ssh/sshd_config, boasts myriad options, some of which may need to be tuned for your site.
 
 In Linux, you can also run sudo systemctl reload sshd. The changes take effect for new connections.
 
-File transfers :
+# File transfers :
 
 You can use scp to copy files from your system to a remote host, from a remote host to your system, or between remote hosts. The syntax mirrors that of cp with some extra decorations to designate hosts and usernames.
 
