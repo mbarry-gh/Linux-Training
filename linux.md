@@ -46,11 +46,11 @@ For example, to check the disk space of /var/log:
 
 If you specify a command, ssh authenticates itself to the host, runs the command, and exits without opening an interactive shell. If you do not specify a username, ssh uses your local username on the remote host.
 
-# Specify username to call SSH on remote machine
+![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) Specify username to call SSH on remote machine
 
 ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) $ ssh vipin@web01.k8slab.in
 
-# For example, you could disable host checks for a server:
+![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) For example, you could disable host checks for a server:
 
 ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) $ ssh -o StrictHostKeyChecking=no web01.k8slab.in
 
