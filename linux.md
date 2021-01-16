@@ -117,15 +117,6 @@ $ chmod 0600 ~vagrant/.ssh/authorized_keys <br />
 ssh-agent is even more useful when you leverage its ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)  key forwarding feature, which makes the loaded keys available to remote hosts while you are logged in to them through ssh.
  You can use this feature to jump from one server to another without copying your private key to remote systems.
 
-
-
-
-
-
-
-
-
-
 To enable agent forwarding, either add ForwardAgent yes to your ~/.ssh.config file or use ssh -A.
 
 # sshd: the OpenSSH server :
@@ -142,3 +133,14 @@ You can use scp to copy files from your system to a remote host, from a remote h
 $ scp ./file web01.k8slab.in: <br />
 $ scp web01.k8slab.in:file ./file <br />
 $ scp web01.k8slab.in:file web02.k8slab.in:file <br />
+
+
+# Example-command:
+
+![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)  $ yum list installed | grep ssh <br />
+![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)  $ systemctl status sshd <br />
+![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)  $ systemctl enable sshd </b /> 
+![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)  $ systemctl start sshd <br />
+![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)  $ grep PermitRootLogin /etc/ssh/sshd_config <br />
+![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)  $ scp /home/vipin/memo vipin@10.140.67.23:/tmp <br />
+![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)  $ scp vipin@10.140.67.23:/usr/share/man/man1/ /tmp/ <br />
