@@ -71,15 +71,15 @@ Useful SSH client configuration options :
 OpenSSH (and the SSH protocol generally) can use public key to authenticate users to remote systems. As a user, you start by creating a public/private key pair. You give the public key to the server administrator, who adds it to the server in the file ~/.ssh/authorized_keys. You can then log in to the remote server by running ssh with the remote username and matching private key.
 
 1) First create/generate Public/Private key :
-- [vagrant@docker01 ~]$ ssh-keygen
-     Generating public/private rsa key pair.
-     Enter file in which to save the key (/home/vagrant/.ssh/id_rsa):
-     Enter passphrase (empty for no passphrase):
-     Enter same passphrase again:
-     Your identification has been saved in /home/vagrant/.ssh/id_rsa.
-     Your public key has been saved in /home/vagrant/.ssh/id_rsa.pub.
-     The key fingerprint is:
-     SHA256:+PnUoI6g6huuY92KzaJqIlY70sBVkY/XNQYgulT4rXE vagrant@docker01.k8slabs.in
+     [vagrant@docker01 ~]$ ssh-keygen <br />
+     Generating public/private rsa key pair. <br />
+     Enter file in which to save the key (/home/vagrant/.ssh/id_rsa): <br />
+     Enter passphrase (empty for no passphrase): <br />
+     Enter same passphrase again: <br />
+     Your identification has been saved in /home/vagrant/.ssh/id_rsa. <br />
+     Your public key has been saved in /home/vagrant/.ssh/id_rsa.pub. <br />
+     The key fingerprint is: <br />
+     SHA256:+PnUoI6g6huuY92KzaJqIlY70sBVkY/XNQYgulT4rXE vagrant@docker01.k8slabs.in <br />
 
 The key's randomart image is:
 
