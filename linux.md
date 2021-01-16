@@ -72,14 +72,14 @@ OpenSSH (and the SSH protocol generally) can use public key to authenticate user
 
 1) First create/generate Public/Private key :
 - [vagrant@docker01 ~]$ ssh-keygen
-- Generating public/private rsa key pair.
-- Enter file in which to save the key (/home/vagrant/.ssh/id_rsa):
-- Enter passphrase (empty for no passphrase):
-- Enter same passphrase again:
-- Your identification has been saved in /home/vagrant/.ssh/id_rsa.
-- Your public key has been saved in /home/vagrant/.ssh/id_rsa.pub.
-- The key fingerprint is:
-- SHA256:+PnUoI6g6huuY92KzaJqIlY70sBVkY/XNQYgulT4rXE vagrant@docker01.k8slabs.in
+     Generating public/private rsa key pair.
+     Enter file in which to save the key (/home/vagrant/.ssh/id_rsa):
+     Enter passphrase (empty for no passphrase):
+     Enter same passphrase again:
+     Your identification has been saved in /home/vagrant/.ssh/id_rsa.
+     Your public key has been saved in /home/vagrant/.ssh/id_rsa.pub.
+     The key fingerprint is:
+     SHA256:+PnUoI6g6huuY92KzaJqIlY70sBVkY/XNQYgulT4rXE vagrant@docker01.k8slabs.in
 
 The key's randomart image is:
 
