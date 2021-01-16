@@ -139,6 +139,6 @@ In Linux, you can also run sudo systemctl reload sshd. The changes take effect f
 
 You can use scp to copy files from your system to a remote host, from a remote host to your system, or between remote hosts. The syntax mirrors that of cp with some extra decorations to designate hosts and usernames.
 
-$ scp ./file web01.k8slab.in:
-$ scp web01.k8slab.in:file ./file
-$ scp web01.k8slab.in:file web02.k8slab.in:file
+$ scp ./file web01.k8slab.in: < /br>
+$ scp web01.k8slab.in:file ./file < /br>
+$ scp web01.k8slab.in:file web02.k8slab.in:file < /br>
