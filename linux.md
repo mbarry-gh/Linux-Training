@@ -18,7 +18,7 @@ In the most common and basic usage, a client establishes a connection to the ser
 
 To initiate this process, a user invokes ssh with the remote host as the first argument:
 
-![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) $ ssh web01.k8slab.in 
+![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+ ssh web01.k8slab.in ) $ ssh web01.k8slab.in 
 
 ssh attempts a TCP connection on port 22 When the connection is established, the server sends its public key for verification. If the server isn’t already known then ssh prompts the user to confirm
 Once the user accepts the key, the fingerprint is added to ~/.ssh/known_hosts for future use.
